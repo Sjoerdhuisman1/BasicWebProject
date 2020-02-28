@@ -6,17 +6,19 @@
 
 @{
     songMethodes mySongMethodes = new songMethodes();
-    string file = @"~\App_Data\Playlist.xml";
-    DataSet ds = mySongMethodes.GetAllSongs(file);
+    string filePath = @"~\App_Data\Playlist.xml";
+    DataSet ds = mySongMethodes.GetAllSongs(filePath);
 }
+
 <html>
 <head>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <script src="~/Scripts/bootstrap.min.js"></script>
 </head>
 <body>
+    <br /><br />
 
-    <tabel class="table-bordered">
+    <table class="table-bordered">
         <tr>
             <th>Id</th>
             <th>Artist</th>
