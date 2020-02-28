@@ -1,8 +1,8 @@
-﻿using System.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data;
 
 
 namespace BasicWebProject.App_Code
@@ -10,6 +10,7 @@ namespace BasicWebProject.App_Code
     public class songMethodes
     {
     }
+
 
     public DataSet GetAllSongs(string file)
     {
@@ -33,5 +34,10 @@ namespace BasicWebProject.App_Code
         dtSongs.Columns.Add(dcTime);
         dtSongs.Columns.Add(dcFile);
         ds.Tables.Add(dtSongs);
+
+        ds.ReadXml(file);
+
+        ds.ReadXml(HttpContext.Current.Server.MapPath(file));
+        return ds;
     }
 }
