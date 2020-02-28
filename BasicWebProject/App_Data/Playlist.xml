@@ -2,20 +2,20 @@
 <playlist>
   <song>
     <id>1</id>
-    <artist> Pieter </artist>
-    <title> Pieter2 </title>
+    <artist>Pieter</artist>
+    <title>Pieter2</title>
     <year>2199</year>
     <genre>koel</genre>
     <time>23:59</time>
-    <file>Pieter en de koele mannen.mp3</file>
+    <file>Pieter_en_de_koele_mannen.mp3</file>
   </song>
   <song>
     <id>2</id>
-    <artist> Pieter </artist>
-    <title> Pieter3 </title>
+    <artist>Pieter</artist>
+    <title>Pieter3</title>
     <year>2210</year>
     <genre>koel2</genre>
     <time>23:58</time>
-    <file>Pieter en de koele mannen 2.mp3</file>
+    <file>Pieter_en_de_koele_mannen_2.mp3</file>
   </song>
 </playlist>

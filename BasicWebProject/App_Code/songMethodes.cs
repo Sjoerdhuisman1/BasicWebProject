@@ -9,12 +9,24 @@ namespace BasicWebProject.App_Code
 {
     public class songMethodes
     {
+        DataSet ds = new DataSet("Playlist");
+        public DataRow GetEmptyDataRow()
+        {
+            DataRow dr = ds.Tables["songs"].NewRow();
+            return dr;
+        }
 
+        public void CreateSong(DataRow dataRow, string file)
+        {
+            ds.Tables["songs"].Rows.Add(dataRow);
+            ds.WriteXml(HttpContext.Current.Server.MapPath(file));
+        }
 
+       
 
         public DataSet GetAllSongs(string file)
         {
-            DataSet ds = new DataSet("playlist");
+          //  DataSet ds = new DataSet("Playlist");
 
             DataTable dtSongs = new DataTable("songs");
 

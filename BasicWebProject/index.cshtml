@@ -6,8 +6,10 @@
 
 @{
     songMethodes mySongMethodes = new songMethodes();
-    string filePath = @"~\App_Data\Playlist.xml";
-    DataSet ds = mySongMethodes.GetAllSongs(filePath);
+    string file = @"~\App_Data\Playlist.xml";
+    DataSet ds = mySongMethodes.GetAllSongs(file);
+    Session["playlistClass"] = mySongMethodes;
+    Session["file"] = file;
 }
 
 <html>
@@ -29,11 +31,11 @@
             <th>File</th>
         </tr>
 
-        @foreach (DataRow dr in ds.Tables["song"].Rows)
+        @foreach (DataRow dr in ds.Tables["songs"].Rows) 
         {
             <tr>
                 <td>@dr["id"]</td>
-                <td>@dr["artiest"]</td>
+                <td>@dr["artist"]</td>
                 <td>@dr["title"]</td>
                 <td>@dr["year"]</td>
                 <td>@dr["genre"]</td>
