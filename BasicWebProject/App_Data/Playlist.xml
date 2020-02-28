@@ -1,21 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" standalone="yes"?>
 <playlist>
   <songs>
     <id>1</id>
-    <artist>Pieter</artist>
-    <title>Pieter2</title>
-    <year>2199</year>
-    <genre>koel</genre>
-    <time>23:59</time>
-    <file>Pieter_en_de_koele_mannen.mp3</file>
+    <artist>Gerard Joling</artist>
+    <title>Shanri La</title>
+    <year>1988</year>
+    <genre>Idk</genre>
+    <time>3:20</time>
+    <file>Gerard_Joling_shangri_la.mp3</file>
   </songs>
   <songs>
     <id>2</id>
-    <artist>Pieter</artist>
-    <title>Pieter3</title>
-    <year>2210</year>
-    <genre>koel2</genre>
-    <time>23:58</time>
-    <file>Pieter_en_de_koele_mannen_2.mp3</file>
+    <artist>The Flexian, Sef</artist>
+    <title>BROs BEFORE HOs</title>
+    <year>2013</year>
+    <genre>Hip-Hop/Rap</genre>
+    <time>3:38</time>
+    <file>The Flexian_Bro_Before_Ho.mp3</file>
   </songs>
 </playlist>
