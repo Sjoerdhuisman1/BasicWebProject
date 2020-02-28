@@ -24,5 +24,14 @@ namespace BasicWebProject.App_Code
         DataColumn dcGenre = new DataColumn("genre");
         DataColumn dcTime = new DataColumn("time");
         DataColumn dcFile = new DataColumn("file");
+
+        dtSongs.Columns.Add(dcId);
+        dtSongs.Columns.Add(dcArtist);
+        dtSongs.Columns.Add(dcTitle);
+        dtSongs.Columns.Add(dcYear);
+        dtSongs.Columns.Add(dcGenre);
+        dtSongs.Columns.Add(dcTime);
+        dtSongs.Columns.Add(dcFile);
+        ds.Tables.Add(dtSongs);
     }
 }
