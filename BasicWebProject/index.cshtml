@@ -1,1 +1,47 @@
-﻿
+﻿<!Doctype html>
+
+@using System.Data;
+@using BasicWebProject.App_Code;
+
+@{
+    songMethodes mySongMethodes = new songMethodes();
+    string file = @"..\\App_Data\Playlist.xml";
+    DataSet ds = mySongMethodes.GetAllSongs(file);
+}
+<html>
+<head>
+
+
+</head>
+<body>
+
+    <tabel>
+        <tr>
+            <th>Id</th>
+            <th>Artist</th>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Genre</th>
+            <th>Time</th>
+            <th>File</th>
+        </tr>
+ 
+    @foreach (DataRow dr in ds.Tables["song"].Rows)
+{
+    <tr>
+        <td>@dr["id"]</td>
+        <td>@dr["artiest"]</td>
+        <td>@dr["title"]</td>
+        <td>@dr["year"]</td>
+        <td>@dr["genre"]</td>
+        <td>@dr["time"]</td>
+        <td>@dr["file"]</td>
+    </tr>
+}
+    </table>
+
+</body>
+
+</html>
+
+    
