@@ -35,7 +35,7 @@ namespace BasicWebProject.App_Code
             dtSongs.Columns.Add(dcFile);
             ds.Tables.Add(dtSongs);
 
-            ds.ReadXml(file);
+//ds.ReadXml(file);
 
             ds.ReadXml(HttpContext.Current.Server.MapPath(file));
             return ds;
